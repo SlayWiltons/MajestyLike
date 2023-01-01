@@ -16,6 +16,4 @@ public class Spawner : MonoBehaviour
         _unit = Instantiate(_unitPrefab, _spawnPoint.position, Quaternion.identity);
         _unit.GetComponent<PeasantBase>().SetStarterPoints(_spawnPoint, _exitPoint);
     }
-
-    
 }
