@@ -87,6 +87,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TPose
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84eee915528b6414e8ac27d961f7ce62, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 84eee915528b6414e8ac27d961f7ce62, type: 3}
       propertyPath: m_Controller
       value: 
