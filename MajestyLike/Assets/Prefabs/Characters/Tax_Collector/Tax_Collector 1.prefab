@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8599591974919915234}
+  - component: {fileID: 1966330709249754048}
   m_Layer: 0
   m_Name: Tax_Collector 1
   m_TagString: Untagged
@@ -32,6 +33,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1966330709249754048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4957899631887275870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f92890f54043624cbb2881e3004c498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Lucius
+  charClass: {fileID: 11400000, guid: 8ec22bf72fee6df42a30ba2f2ae14bce, type: 2}
+  charModel: {fileID: 5506024164684531292}
 --- !u!1001 &4659037722968603405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100,5 +116,10 @@ PrefabInstance:
 --- !u!4 &5125803785616973030 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 84eee915528b6414e8ac27d961f7ce62, type: 3}
+  m_PrefabInstance: {fileID: 4659037722968603405}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5506024164684531292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 84eee915528b6414e8ac27d961f7ce62, type: 3}
   m_PrefabInstance: {fileID: 4659037722968603405}
   m_PrefabAsset: {fileID: 0}
