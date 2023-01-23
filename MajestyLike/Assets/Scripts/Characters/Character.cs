@@ -7,14 +7,49 @@ public class Character : MonoBehaviour, IDamageable<int>, IKillable
     [SerializeField] private string name;
     [SerializeField] private Char_Class charClass;
     [SerializeField] private GameObject charModel;
+    [SerializeField] private int hpMultiplier;
+    private int strength;
+    private int intelligence;
+    private int willpower;
+    private int agility;
+    private int endurance;
+    private int luck;
+    private int hp;
+    
+
+    private void Awake()
+    {
+        if (charClass != null)
+        {
+            strength = charClass.Strength;
+            intelligence = charClass.Intelligence;
+            willpower = charClass.Willpower;
+            agility = charClass.Agility;
+            endurance = charClass.Endurance;
+            luck = charClass.Luck;
+            SetHP();
+        }
+    }
 
     public void Die()
     {
-        throw new System.NotImplementedException();
+        charModel.SetActive(false);
     }
 
     public void TakeDamage(int takenDamage)
     {
-        throw new System.NotImplementedException();
+        if (takenDamage < hp)
+        {
+            hp -= takenDamage;
+        }
+        else
+        {
+            Die();
+        }
+    }
+
+    private void SetHP()
+    {
+        hp = hpMultiplier * endurance;
     }
 }

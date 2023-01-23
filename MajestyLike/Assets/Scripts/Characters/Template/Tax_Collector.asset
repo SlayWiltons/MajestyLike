@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Tax_Collector
   m_EditorClassIdentifier: 
   Class_name: Tax collector
-  STR: 0
-  INT: 0
-  WP: 0
-  AGI: 1
-  END: 2
-  LUCK: 1
+  Strength: 0
+  Intelligence: 0
+  Willpower: 0
+  Agility: 0
+  Endurance: 2
+  Luck: 1

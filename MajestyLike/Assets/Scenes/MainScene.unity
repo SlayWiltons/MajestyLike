@@ -1107,6 +1107,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: fdd7f61278cdeee42910dd2ab15a0004, type: 2}
+    - target: {fileID: 1966330709249754048, guid: ad6259fd00c72ee4384598fb0cc61054, type: 3}
+      propertyPath: hpMultiplier
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4957899631887275870, guid: ad6259fd00c72ee4384598fb0cc61054, type: 3}
       propertyPath: m_Name
       value: Tax_Collector
