@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class Character : MonoBehaviour, IDamageable<int>, IKillable
 {
+    public enum CharType
+    {
+        Nonfight,
+        Fight
+    }
+
     [SerializeField] private string name;
     [SerializeField] private Char_Class charClass;
     [SerializeField] private GameObject charModel;
     [SerializeField] private int hpMultiplier;
+    [SerializeField] private CharType charType;
+
+
     private int strength;
     private int intelligence;
     private int willpower;
