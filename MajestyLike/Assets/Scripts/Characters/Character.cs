@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Character : MonoBehaviour, IDamageable<int>, IKillable
@@ -7,7 +5,8 @@ public class Character : MonoBehaviour, IDamageable<int>, IKillable
     public enum CharType
     {
         Nonfight,
-        Fight
+        Fight,
+        Hero
     }
 
     [SerializeField] private string name;
@@ -15,6 +14,7 @@ public class Character : MonoBehaviour, IDamageable<int>, IKillable
     [SerializeField] private GameObject charModel;
     [SerializeField] private int hpMultiplier;
     [SerializeField] private CharType charType;
+    [SerializeField] private Animator animator;
 
 
     private int strength;
@@ -24,6 +24,7 @@ public class Character : MonoBehaviour, IDamageable<int>, IKillable
     private int endurance;
     private int luck;
     private int hp;
+    private int currentHP;
     
 
     private void Awake()
@@ -38,6 +39,11 @@ public class Character : MonoBehaviour, IDamageable<int>, IKillable
             luck = charClass.Luck;
             SetHP();
         }
+    }
+
+    private void Start()
+    {
+        SetCurrentHP();
     }
 
     public void Die()
@@ -60,5 +66,10 @@ public class Character : MonoBehaviour, IDamageable<int>, IKillable
     private void SetHP()
     {
         hp = hpMultiplier * endurance;
+    }
+
+    private void SetCurrentHP()
+    {
+        currentHP = hp;
     }
 }
