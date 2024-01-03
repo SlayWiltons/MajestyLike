@@ -252,6 +252,26 @@ MonoBehaviour:
   house: {fileID: 266911964}
   testInfoPlate: {fileID: 710935596}
   testText: {fileID: 710935598}
+--- !u!1 &355836339 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4443970088931517412, guid: 4829b98f069a9cf44b93e1856acc70b3, type: 3}
+  m_PrefabInstance: {fileID: 4443970089811750711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &355836342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355836339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d443a81d2ba0ad34584ae475594ac082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characters:
+  - Character: {fileID: 0}
+    Quantity: 0
 --- !u!1 &450704422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1188,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4443970088931517410, guid: 4829b98f069a9cf44b93e1856acc70b3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4443970088931517411, guid: 4829b98f069a9cf44b93e1856acc70b3, type: 3}
       propertyPath: m_RootOrder
       value: 2
